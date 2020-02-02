@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <title>LyCoris Editor</title>
+    <meta content="">
+    <link rel="stylesheet" href="fonts/fira_code.css">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/1.4.0/css/perfect-scrollbar.min.css" />
+    <link rel="stylesheet" href="editor.css" />
+    <link rel="stylesheet" href="website.css" />
+  </head>
+  <body>
+    <div id="header">
+      <h1>LyCoris editor!</h1>
+      <div class="about">
+        <div class="about-inner">
+          LyCoris is a class-based lazy-evaluated programming language <br>
+          targetting object-oriented and distributed systems. It is made <br>
+          to take advantage of multiple cpus and cpu cores (parallelism) <br>
+          .
+        </div>
+      </div>
+    </div>
+    <pre class="clio-editor" contenteditable="true">fn fib n:
+  var message = "Hello, World!"
+
+   if (message == "Hello,World!") {
+      Console.println(message)
+   }
+ 
+</pre>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/1.4.0/perfect-scrollbar.min.js"></script>
+    <script src="jquery.caret.min.js"></script>
+    <script src="clio.js"></script>
+    <script src="editor.js"></script>
+    <script>
+      $('.clio-editor').clio_editor();
+    </script>
+  </body>
+</html>
